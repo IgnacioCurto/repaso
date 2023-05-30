@@ -1,0 +1,41 @@
+
+/* ============================== NAVBAR ============================== */
+nav {
+    background-color: #AEE2FF;
+    padding: 2rem;
+}
+
+.mapa iframe{
+    width: 100%;
+}
+
+.nav__logo {
+    width: 3%;
+    position: absolute;
+    top: 1rem;
+    transition: .2s ease;
+}
+
+.nav__logo:hover{
+    transform: scale(1.1);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__link a{
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+    margin: 0 1rem;
+    transition: .2s ease;
+
+}
+
+.nav__link a:hover{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 15px 0px rgba(255, 133, 218, 0.75);
+    color: #B799FF;
+}

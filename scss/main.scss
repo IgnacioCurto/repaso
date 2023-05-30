@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import "./variables";
+
+@import "./partials/global";
+@import "./partials/navbar";
+
+/* ---------------- CLASES ESPECIALES */
+.cursive {
+    font-family: 'Pacifico', cursive;
+}
+
+.subtitle {
+    font-size: 3rem;
+    color: #B799FF;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.white{
+    color: white;
+}
+button {
+    border: 2px solid #B799FF;
+    background-color: #ACBCFF;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 0 1rem;
+}
+
+
+
+
+
+/* ============================== BOX MODELING ============================== */
+.boxModeling__container {
+    background-color: white;
+    text-align: center;
+
+    /* LIVE */
+    padding: 4rem 1rem ;
+}
+
+.boxModeling__container h1 {
+    color: #B799FF;
+    font-size: 4rem;
+}
+
+.boxModeling__container h2 {
+    color: #ACBCFF;
+}
+
+
+
+/* ============================== FLEXBOX ============================== */
+.cards__container {
+
+    /* LIVE */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.cards__container .card {
+    width: 15rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    background-color: #AEE2FF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+    transition: .3s ease;
+}
+
+.cards__container .card img {
+    border-radius: 15px;
+}
+
+.cards__container .card h3 {
+    font-size: 1.5rem;
+    color: #f04654;
+}
+
+.cards__container .card h3,
+.cards__container .card p {
+    margin: .5rem 0;
+}
+
+.cards__container .card div {
+
+    /* LIVE */
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__price {
+    color: #f04654;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 14px 0px rgba(255, 133, 218, 0.75);
+}
+
+
+
+
+
+/* ============================== GRIDS ============================== */
+.grid__container {
+    /* LIVE */
+    /* display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        "title title img img"
+        "map   map   img img"
+        "map   map   CTA CTA"
+    ; */
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "title title img img"
+    "map   map   img img"
+    "map   map   CTA CTA"
+    ;
+
+}
+
+
+
+
+
+.grid__container h2{
+    grid-area: title;
+}
+
+.grid__container iframe{
+    grid-area: map;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px -1px rgba(255, 133, 218, 0.75);
+}
+
+.grid__container img{
+    grid-area: img;
+    width: 80%;
+    margin: auto;
+    border: 40px solid white;
+    box-shadow: 0px 6px 12px -1px rgba(255, 133, 218, 0.75);
+    transition: .3s ease;
+}
+.grid__container img:hover{
+    transform: scale(0.98);
+}
+
+.grid__container h4{
+    grid-area: CTA;
+    background-color: white;
+    box-shadow: 0px 6px 12px -1px rgba(255, 133, 218, 0.75);
+    padding: 1rem;
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+.grid__container h4:hover{
+    transform: scale(1.1);
+    background-color: #B799FF;
+    color: white;
+}
+
+.grid__container h4::after{
+    content: "😊";
+}
+.grid__container h4:hover::after{
+    content: "🧁";
+}
+
+
+
+
+/* ============================== BOOTSTRAP ============================== */
+.bootstrap__container{
+    padding: 5% 15%;
+}
+
+
+
+
+/* ============================== FOOTER ============================== */
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5rem 5%;
+    background-color: #AEE2FF;
+    box-shadow: inset 0 10px 9px -7px #B799FF;
+}
+
+.footer__container article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.footer__container article div{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container article img{
+    width: 10%;
+    margin: 0 1rem;
+}
+.logo{
+    width: 3rem;
+}
+
+
+
+
+
+
+@import "./media";

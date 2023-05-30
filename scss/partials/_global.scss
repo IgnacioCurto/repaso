@@ -1,0 +1,35 @@
+
+/* ============================== GLOBAL ============================== */
+* {
+    margin: 0;
+    bottom: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #E6FFFD;
+}
+img{
+    width: 100%;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+section:nth-child(even){
+    background-color: #ACBCFF;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.logo{
+    width: 3rem;
+}
